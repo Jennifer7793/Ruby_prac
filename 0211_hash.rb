@@ -1,10 +1,11 @@
 def converting(value)
   value = value.split(//)
-  # p value
+  #p value
   transfer_to_i = { 玖:9, 捌:8, 柒:7, 陸:6, 伍:5, 肆:4, 參:3, 貳:2, 壹:1, 零:0 }
   number = []
   value.each do |key|
     number << transfer_to_i[key.to_sym]
+    p number
   end
   number
 end
