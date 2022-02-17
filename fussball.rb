@@ -1,3 +1,17 @@
+def fizzBuzz(n)
+  if n % 15 == 0
+      puts "FizzBuzz"
+  elsif n % 5 == 0
+      p "Buzz"
+  elsif n % 3 == 0
+      p "Fizz"
+  else 
+      p n 
+  end
+
+end
+fizzBuzz(4)
+fizzBuzz(15)
 # Given an input,
 # Output “Fuss” if it is 3’s multiple;
 # Output “Ball” if it is 5’s multiple;
