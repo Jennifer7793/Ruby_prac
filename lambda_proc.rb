@@ -1,7 +1,19 @@
+
+# def call_block
+#   yield 42
+# end
+# call_block  # in `call_block': no block given (yield) (LocalJumpError)
+
+# def get_me_a_return
+#   Proc.new { return 42 }
+# end
+# get_me_a_return.call # block in get_me_a_return': unexpected return (LocalJumpError)
+
 def proc_example
   example = Proc.new { return "I am Proc, stopping here" }
   p "---"
   example.call
+  p "---"
 
   "Proc no return"
 end
@@ -24,8 +36,8 @@ add_two_proc = Proc.new { |n| n + 2 }
 add_two_proc = proc { |n| n + 2 }
 add_two_lambda = -> (n) { n + 2 }
 
-p add_two_proc.call(1, 2, 3)
-p add_two_lambda.call(3)
+p add_two_proc.call(1, 2, 3) # 3
+p add_two_lambda.call(3) # 5
 
 def test_proc
   pr = Proc.new { return 10 }
@@ -42,7 +54,6 @@ end
 puts test_proc   # 10
 puts test_lambda # 50
 
-# Should work
 my_lambda = -> { return 1 }
 puts "Lambda result: #{my_lambda.call}" # Lambda result: 1
 # Should raise exception
