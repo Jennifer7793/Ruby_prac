@@ -15,3 +15,6 @@ p new_first_name
 first_name = "Yi Chen"
 p first_name
 p new_first_name
+
+p 'Jen asked 'Hey KL, how are you doing?''
+p 'Jen asked \'Hey KL, how are you doing?\''
