@@ -1,0 +1,5 @@
+p "Jennifer".gsub(/[aeiou]/, '*') # "J*nn*f*r"
+p "Jennifer".gsub(/([aeiou])/, '<\1>') # "J<e>nn<i>f<e>r"
+p "Jennifer".gsub(/./) { |letter| letter.ord.to_s + ' ' } # "74 101 110 110 105 102 101 114 "
+p "Jennifer".gsub(/(?<jen>[aeiou])/, '{\k<jen>}') #J{e}nn{i}f{e}r"
+p 'Jennifer'.gsub(/[ei]/, 'e' => 5, 'i' => '*') #"J5nn*f5r"
