@@ -1,5 +1,6 @@
 def get_age(age)
-  "#{age}".to_i 
+  # "#{age}".to_i 
+  age.to_i
 end
 
 p get_age("2 years old")
