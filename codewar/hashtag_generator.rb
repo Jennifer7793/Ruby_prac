@@ -1,10 +1,12 @@
 def hashtag_generator(str)
-  new_str = str.split.map(&:capitalize).join('')
-  if new_str.empty? || new_str.length > 140
-    return false
-  else
-    "#"+new_str
-  end
+  # new_str = str.split.map(&:capitalize).join('')
+  # if new_str.empty? || new_str.length >= 140
+  #   return false
+  # else
+  #   "#"+new_str
+  # end
+  str = "#" << str.split.map(&:capitalize).join
+  str.length <= 140 && str.length > 1 ? str : false
 end
 
 p hashtag_generator(" Hello there thanks for trying my Kata")
