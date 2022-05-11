@@ -1,13 +1,23 @@
 def define_suit(card)
-  if card.include? 'C'
-    p 'clubs'
-  elsif card.include? 'D'
-    p 'diamonds'
-  elsif card.include? 'H'
-    p 'hearts'
-  elsif card.include? 'S'
-    p 'spades'
-  end
+  deck = { 'C': 'clubs', 'D': 'diamonds', 'H': 'hearts', 'S': 'spades'}
+  deck[card[-1].to_sym]
+
+  # case card[-1]
+  #   when 'C' then 'clubs'
+  #   when 'D' then 'diamonds'
+  #   when 'H' then 'hearts'
+  #   when 'S' then 'spades'
+  # end
+
+  # if card.include? 'C'
+  #   p 'clubs'
+  # elsif card.include? 'D'
+  #   p 'diamonds'
+  # elsif card.include? 'H'
+  #   p 'hearts'
+  # elsif card.include? 'S'
+  #   p 'spades'
+  # end
 end
 
 p define_suit('3C')
