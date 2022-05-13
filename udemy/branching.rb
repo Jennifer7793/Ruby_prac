@@ -1,13 +1,13 @@
 #if/else
 
 condition = false
-another_condition = true
-if condition || another_condition
+another_condition = false
+if condition && another_condition
 # if !true
   # execute some code
-  puts "Hello"
+  puts "this evaluated to true"
 else
   # execute some other code
-  puts "Bye"
+  puts "this evaluated to false"
 end
 puts "La la la"
