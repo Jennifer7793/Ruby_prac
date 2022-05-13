@@ -1,7 +1,8 @@
 #if/else
 
-condition = false
-if condition
+condition = true
+another_condition = true
+if condition && another_condition
 # if !true
   # execute some code
   puts "Hello"
