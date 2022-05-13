@@ -1,6 +1,6 @@
 #if/else
 
-condition = true
+condition = false
 another_condition = true
 if condition && another_condition
 # if !true
