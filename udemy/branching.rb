@@ -1,9 +1,9 @@
 #if/else
-if true
+if !true
   # execute some code
   puts "Hello"
 else
   # execute some other code
-  puts "Buy"
+  puts "Bye"
 end
 puts "La la la"
