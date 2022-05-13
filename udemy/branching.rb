@@ -2,7 +2,7 @@
 
 condition = false
 another_condition = false
-if condition && another_condition
+if !condition || !another_condition
 # if !true
   # execute some code
   puts "this evaluated to true"
