@@ -11,3 +11,7 @@ puts y/x
 puts "I'm a line"
 puts "-"*20
 puts "I'm a diff line after a divider"
+
+20.times { print "-" }
+20.times { puts "hi" }
+20.times { puts rand(10) } #rand(10) random num between 0-9
