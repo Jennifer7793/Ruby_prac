@@ -8,8 +8,18 @@ p a.push("new item") #[1, 2, 3, 4, 5, 6, 7, 8, 9, "new item"]
 p b = a.pop #pop for last in first out
 p a #[1, 2, 3, 4, 5, 6, 7, 8, 9]
 p b #"new item"
+print a.select {|i| i.odd?}
+p "-" *20 
 
-p %w(my name is Jen and this is great, I'll be master at Ruby!)
+p c = %w(my name is Jen and this is great, I'll be master at Ruby!)
+p "-" *20
+c.each do |i|
+  print i + " "
+end
+p "-" *20 
+c.each {|i| print i + " "}
+p "-" *20 
+c.each {|i| print i.capitalize + " "}
 
 x = 1..100
 p x.class #Range
