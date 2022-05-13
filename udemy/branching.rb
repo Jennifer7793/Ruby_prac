@@ -1,5 +1,8 @@
 #if/else
-if !true
+
+condition = false
+if condition
+# if !true
   # execute some code
   puts "Hello"
 else
