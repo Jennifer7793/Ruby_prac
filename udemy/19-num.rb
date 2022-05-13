@@ -6,6 +6,11 @@ puts "Enter the 2nd number"
 num_2 = gets.chomp
 puts "The first number multiplied by the 2nd number is #{num_1.to_i * num_2.to_i}"
 
+puts "The first number substract the 2nd number is #{num_1.to_i - num_2.to_i}"
+puts "The first number divided by the 2nd number is #{num_1.to_i / num_2.to_i}"
+puts "The first number add the 2nd number is #{num_1.to_i + num_2.to_i}"
+puts "The first number modulus the 2nd number is #{num_1.to_i % num_2.to_i}"
+
 
 # puts 1 + 2
 # puts 10/4 # will drop the decimal, so return 2
