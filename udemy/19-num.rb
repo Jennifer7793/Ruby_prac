@@ -1,15 +1,35 @@
+def multiply(num_1, num_2)
+  num_1.to_f * num_2.to_f # auto return
+end
+
+def divid(num_1, num_2)
+  num_1.to_f / num_2.to_f
+end
+
+def substract(num_1, num_2)
+  num_1.to_f - num_2.to_f
+end
+
+def add(num_1, num_2)
+  num_1.to_f + num_2.to_f
+end
+
+def modulus(num_1, num_2)
+  num_1.to_f % num_2.to_f
+end
+
 puts "Simple calculator"
 25.times {print "-"}
 puts "Enter the first number"
 num_1 = gets.chomp
 puts "Enter the 2nd number"
 num_2 = gets.chomp
-puts "The first number multiplied by the 2nd number is #{num_1.to_f * num_2.to_f}"
+puts "The first number multiplied by the 2nd number is #{multiply(num_1, num_2)}"
 
-puts "The first number substract the 2nd number is #{num_1.to_f - num_2.to_f}"
-puts "The first number divided by the 2nd number is #{num_1.to_f / num_2.to_f}"
-puts "The first number add the 2nd number is #{num_1.to_f + num_2.to_f}"
-puts "The first number modulus the 2nd number is #{num_1.to_f % num_2.to_f}"
+puts "The first number substracted from the 2nd number is #{substract(num_1, num_2)}"
+puts "The first number divided by the 2nd number is #{divid(num_1, num_2)}"
+puts "The first number add to the 2nd number is #{add(num_1, num_2)}"
+puts "The first number modulus the 2nd number is #{modulus(num_1, num_2)}"
 
 
 # puts 1 + 2
