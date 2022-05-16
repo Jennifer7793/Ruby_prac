@@ -1,5 +1,6 @@
 def chain(input, fs)
-  (input + 1) * 30
+  # (input + 1) * 30
+  fs.reduce(input) { |input, fs| send(fs, input) }
 end
 
 def add num
