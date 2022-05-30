@@ -1,9 +1,11 @@
 def is_narcissistic(n)
-  str = n.to_s
-  l = str.length
-  accum = 0
-  str.split('').each { |n| accum += n.to_i ** l }
-  accum == n
+  ds = n.digits
+  ds.map { |n| n ** ds.size }.sum == n
+  # str = n.to_s
+  # l = str.length
+  # accum = 0
+  # str.split('').each { |n| accum += n.to_i ** l }
+  # accum == n
 end
 
 p is_narcissistic(1)
