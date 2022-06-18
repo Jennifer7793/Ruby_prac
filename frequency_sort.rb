@@ -8,11 +8,13 @@ def solve(arr)
   # arr.each { |arr| arr_count[arr] += 1 }
   # arr_count.sort_by { |arr| }
 
-  arr.group_by do |e|
-    e
-  end.map do |k, v|
-    v
-  end
+  # arr.group_by do |e|
+  #   e
+  # end.map do |k, v|
+  #   v
+  # end
+
+  arr.sort_by { |e| [-arr.count(e), e] }
 end
 
 p solve([2,3,5,3,7,9,5,3,7]) # [3,3,3,5,5,7,7,2,9]
