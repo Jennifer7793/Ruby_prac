@@ -61,3 +61,5 @@ end
 [1, 2, 3, 4, 5].each do |num|
   puts num
 end
+
+# main difference of each iterator and for looping is that each only maintains the variable inside the iteration block, whereas for looping allows the variable to live on outside the block
