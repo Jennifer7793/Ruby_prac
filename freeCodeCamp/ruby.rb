@@ -17,3 +17,18 @@ a_symbol = :my_symbol
 
 #float
 book_price = 15.80
+
+# conditional statements
+if true
+  puts "Hello Ruby If"
+end
+
+if 2 > 1
+  puts "2 is greater than 1"
+end
+
+if 1 > 2
+  puts "1 is greater than 2"
+else
+  puts "1 is not greater than 2"
+end
