@@ -46,3 +46,14 @@ def hey_ho?
 end
 
 puts "let's go" if hey_ho?
+
+# Looping/Iterator
+num = 1
+while num <= 5
+  puts num
+  num += 1
+end
+
+for num in 1..5
+  print num
+end
