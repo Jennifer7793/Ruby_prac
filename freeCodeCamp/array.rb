@@ -25,3 +25,6 @@ hash_jen = {
   "nationality" => "Taiwanese"
 }
 puts "My name is #{hash_jen["name"]}, you can call me #{hash_jen["nickname"]}, I'm #{hash_jen["nationality"]}"
+
+hash_jen["age"] = "4ever20"
+puts hash_jen
