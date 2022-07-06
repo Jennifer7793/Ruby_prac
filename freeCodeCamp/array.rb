@@ -28,3 +28,5 @@ puts "My name is #{hash_jen["name"]}, you can call me #{hash_jen["nickname"]}, I
 
 hash_jen["age"] = "4ever20"
 puts hash_jen
+
+hash_jen.each { |k, v| puts "#{k}: #{v}" }
