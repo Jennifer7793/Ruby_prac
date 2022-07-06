@@ -3,10 +3,16 @@ my_bday = [7, 7, 9, 3]
 puts my_bday[0]
 puts my_bday[1]
 
-AstroCamp_mates = [
+astroCamp_mates = [
   "Ken",
   "Seth",
   "Lilith",
   "Jennifer"
 ]
-puts AstroCamp_mates[3]
+puts astroCamp_mates[3]
+
+astroCamp_mates.push("Erik")
+puts astroCamp_mates
+
+astroCamp_mates << "Derek"
+puts astroCamp_mates
