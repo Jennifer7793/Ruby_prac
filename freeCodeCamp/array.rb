@@ -18,3 +18,10 @@ astroCamp_mates << "Derek"
 # equal to below
 astroCamp_mates.<<("Jimmy")
 puts astroCamp_mates
+
+hash_jen = {
+  "name" => "Jennifer",
+  "nickname" => "Jenjen",
+  "nationality" => "Taiwanese"
+}
+puts "My name is #{hash_jen["name"]}, you can call me #{hash_jen["nickname"]}, I'm #{hash_jen["nationality"]}"
