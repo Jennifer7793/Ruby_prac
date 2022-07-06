@@ -15,4 +15,6 @@ astroCamp_mates.push("Erik")
 puts astroCamp_mates
 
 astroCamp_mates << "Derek"
+# equal to below
+astroCamp_mates.<<("Jimmy")
 puts astroCamp_mates
