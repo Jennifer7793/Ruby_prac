@@ -12,3 +12,6 @@ class Vehicle
 end
 
 # use initialize method so when creating vehicle object, can define its attributes
+
+tesla_model_s = Vehicle.new(4, 'electric', 5, 250)
+p tesla_model_s
