@@ -30,3 +30,7 @@ hash_jen["age"] = "4ever20"
 puts hash_jen
 
 hash_jen.each { |k, v| puts "#{k}: #{v}" }
+
+# "Class" is a way to define objects. 
+# "Objects" have two main characteristic: data and behavior. Vehicles have data like num of wheels and doors, behavior like accelerating and stopping
+# data = attributes; behavior = methods
