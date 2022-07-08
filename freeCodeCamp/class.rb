@@ -19,11 +19,16 @@ class Vehicle
   # def set_num_of_wheels=(num)  #setter
   #   @num_of_wheels = num
   # end
+
+  def talking_method
+    "YOYOYO"
+  end
 end
 
 # use initialize method so when creating vehicle object, can define its attributes
 
 tesla_model_s = Vehicle.new(4, 'electric', 5, 250)
+p tesla_model_s.talking_method
 p tesla_model_s
 p tesla_model_s.num_of_wheels
 
