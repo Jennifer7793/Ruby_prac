@@ -3,8 +3,7 @@
 # data = attributes; behavior = methods
 
 class Vehicle
-  attr_reader :num_of_wheels
-  attr_writer :num_of_wheels
+  attr_accessor :num_of_wheels
 
   def initialize(num_of_wheels, type_of_tank, seating_cap, max_velocity)
     @num_of_wheels = num_of_wheels
@@ -30,3 +29,4 @@ p tesla_model_s.num_of_wheels
 
 tesla_model_s.num_of_wheels = 3
 p tesla_model_s
+p tesla_model_s.num_of_wheels
