@@ -9,6 +9,14 @@ class Vehicle
     @seating_cap = seating_cap
     @max_velocity = max_velocity
   end
+
+  def num_of_wheels  #getter
+    @num_of_wheels
+  end
+
+  def set_num_of_wheels=(num)  #setter
+    @num_of_wheels = num
+  end
 end
 
 # use initialize method so when creating vehicle object, can define its attributes
