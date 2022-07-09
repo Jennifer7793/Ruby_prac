@@ -3,7 +3,7 @@
 # data = attributes; behavior = methods
 
 class Vehicle
-  attr_accessor :num_of_wheels
+  attr_accessor :num_of_wheels, :seating_cap, :max_velocity
 
   def initialize(num_of_wheels, type_of_tank, seating_cap, max_velocity)
     @num_of_wheels = num_of_wheels
@@ -24,6 +24,28 @@ class Vehicle
     "YOYOYO"
   end
 end
+
+# inheritance: behaviors and characteristcs
+class Car
+  attr_accessor :num_of_wheels, :seating_cap, :max_velocity
+
+  def initialize(num_of_wheels, seating_cap, max_velocity)
+    @num_of_wheels = num_of_wheels
+    @seating_cap = seating_cap
+    @max_velocity = max_velocity
+  end
+end
+
+class ElectricCar < Car
+end
+
+my_car = Car.new(4, 5, 250)
+p my_car.num_of_wheels
+p my_car.seating_cap
+
+tesla = ElectricCar.new(4, 5, 250)
+p tesla.num_of_wheels
+p tesla.max_velocity
 
 # use initialize method so when creating vehicle object, can define its attributes
 
