@@ -43,8 +43,16 @@ class Person
     @name = name
     @age = age
   end
+
+  def name
+    @name
+  end
+
+  def age
+    @age
+  end
 end
 
 jen = Person.new("Jennifer", 20)
-jen.name #class.rb:49:in `<main>': undefined method `name' for #<Person:0x00005647c16b2420 @name="Jennifer", @age=20> (NoMethodError)
+p jen.name #class.rb:49:in `<main>': undefined method `name' for #<Person:0x00005647c16b2420 @name="Jennifer", @age=20> (NoMethodError)
 # bcoz we did not implement name and age methods on our Person class
