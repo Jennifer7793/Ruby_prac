@@ -35,3 +35,16 @@ p tesla_model_s.num_of_wheels
 tesla_model_s.num_of_wheels = 3
 p tesla_model_s
 p tesla_model_s.num_of_wheels
+
+# Encapsulation is a way to restrict direct acces to objects' data and methods. At the same time it faciliates operation on that data (objects' methods).
+
+class Person 
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+end
+
+jen = Person.new("Jennifer", 20)
+jen.name #class.rb:49:in `<main>': undefined method `name' for #<Person:0x00005647c16b2420 @name="Jennifer", @age=20> (NoMethodError)
+# bcoz we did not implement name and age methods on our Person class
