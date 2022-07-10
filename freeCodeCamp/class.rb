@@ -78,3 +78,6 @@ end
 jen = Person.new("Jennifer", 20)
 p jen.name #class.rb:49:in `<main>': undefined method `name' for #<Person:0x00005647c16b2420 @name="Jennifer", @age=20> (NoMethodError)
 # bcoz we did not implement name and age methods on our Person class
+
+p Math::PI
+p Math.sqrt(81)
