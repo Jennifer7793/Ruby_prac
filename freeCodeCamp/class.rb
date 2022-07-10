@@ -81,3 +81,15 @@ p jen.name #class.rb:49:in `<main>': undefined method `name' for #<Person:0x0000
 
 p Math::PI
 p Math.sqrt(81)
+
+class RunnerAthlete
+  def initialize(name)
+    @name = name
+  end
+end
+
+module Skill
+  def average_speed
+    puts "My average speed is 20mph"
+  end
+end
